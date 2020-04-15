@@ -15,7 +15,8 @@
 
 </p>
 
-<div>
-  Nama Item: {{ item.nama }}<br/>
-  Harga    : {{ item.harga }}
+<div *ngFor = "let buah of item; let i = index">
+  {{i+1}}.
+  Nama Item: {{ buah.nama }}<br/>
+  Harga    : {{ buah.harga | currency : 'Rp'}}
 </div>

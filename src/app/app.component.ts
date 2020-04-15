@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Enrico';
-  item = {
+  item = [{
     nama: 'Apel',
     harga: 5000
-  };
+  }, {
+    nama: 'Jeruk',
+    harga: 10000
+  }];
 }
