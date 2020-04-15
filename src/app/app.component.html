@@ -20,3 +20,24 @@
   Nama Item: {{ buah.nama }}<br/>
   Harga    : {{ buah.harga | currency : 'Rp'}}
 </div>
+
+<div *ngFor = "let data of arr">
+  {{data}}
+</div>
+
+<p *ngIf="show">Teks ini muncul jika show = true</p>
+
+<ng-template
+  *ngIf = "show; then showBlock; else notShowBlock">
+</ng-template>
+
+<ng-template #showBlock>
+  <p>Show true</p>
+</ng-template>
+
+<ng-template #notShowBlock>
+  <p>Show false</p>
+</ng-template>
+
+<input [(ngModel)] =user type="text">
+<p *ngIf="user">Halo {{user}}</p>

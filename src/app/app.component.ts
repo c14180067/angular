@@ -14,4 +14,9 @@ export class AppComponent  {
     nama: 'Jeruk',
     harga: 10000
   }];
+  
+  arr = ["aa","bb","cc","dd","ee"];
+
+  show: boolean = true;
+
 }
