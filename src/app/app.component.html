@@ -39,5 +39,12 @@
   <p>Show false</p>
 </ng-template>
 
+<button (click) = "showButton()">Show</button><br/><br/>
+
 <input [(ngModel)] =user type="text">
 <p *ngIf="user">Halo {{user}}</p>
+
+<p>
+<button (click) = "klikButton()">Tekan disini</button>
+{{pesan}}
+</p>

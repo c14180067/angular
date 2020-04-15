@@ -19,4 +19,19 @@ export class AppComponent  {
 
   show: boolean = true;
 
+  showButton() {
+    if(this.show == true) {
+      this.show = false;
+    }
+    else {
+      this.show = true;
+    }
+  }
+
+  user="";
+
+  pesan = '';
+  klikButton() {
+    this.pesan = 'Tombol ditekan';
+  }
 }
